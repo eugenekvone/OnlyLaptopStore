@@ -1,0 +1,148 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body.ru, body.en {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@mixin cf {
+	content: '';
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+.cf:after {
+	@include cf;
+}
+
+.cf::after {
+	@include cf;
+}
+
+p.en {
+	font-family: LuloCleanOne;
+}
+
+p.ru {
+	font-family: AkzidenzMD;
+}
+
+body p, header p {
+	margin: 0;
+}
+
+header {
+	overflow: hidden;
+}
+
+.shadowLR {
+	box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.1), -1px 0px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.shadowBottom {
+	box-shadow: 0 2px 1px rgba(0,0,0,0.2);
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none !important;
+}
+
+.btn, .btn:hover {
+	transition: background-color 0.2s;
+}
+
+div.btn:hover, a.btn:hover {
+	background-color: $violet;
+}
+
+footer.en .ru,
+footer.ru .en,
+body.en .ru,
+body.ru .en {
+  display: none
+};
+
+body#registration, body#authorization {
+	#content {
+		width: 380px;
+		height: 100%;
+		margin-top: 115px;
+		border: none;
+	}
+}
+
+body#personal, body#product, body#basketStand, body#favoritesStand {
+	#content {
+		margin-top: 65px;
+	}
+}
+
+body#personal, body#product, body#basketStand, body#favoritesStand, body#authorization, body#registration {
+	.bottomNav {
+		position: absolute;
+		top: 65px;
+	}
+
+	.bottomNav.fixedBottomNav {
+		top: 0;
+		position: fixed;
+	}
+}

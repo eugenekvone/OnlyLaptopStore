@@ -1,0 +1,499 @@
+// PERSONAL
+
+body#personal {
+
+	.fact {
+		border-top: 1px solid $grey2;
+		border-right: 1px solid $grey2;
+	}
+
+	.fact:last-of-type {
+		border-right: none;
+	}
+
+	#content {
+		background-color: $grey1;
+
+		.active {
+			display: block;
+		}
+	}
+	
+	input[type=text], input[type=password], .btn {
+		width: 446px;
+	}
+
+	input.phoneNumber {
+		width: 420px;
+	}
+
+	.paddCard .btn{
+		right: 33px;
+		width: auto;
+	}
+
+	#myBasket .btn {
+		width: 145px;
+	}
+
+	div.btn, a.btn {
+		border: 1px solid white;
+		transition: background-color 0.2s, color 0.2s;
+	}
+}
+
+input[type=text].phoneNumber {
+	clear: none;
+}
+
+#personNav, .personInfo {
+	float: left;
+	height: 100%;
+	padding: 0;
+}
+
+#personNav {
+	background-color: $grey1;
+	padding: 35px 10px 0 35px;
+
+	p {
+		font-size: 11px;
+		text-transform: uppercase;
+		margin-bottom: 25px;
+		font-family: AkzidenzMD;
+	}
+
+	li p {
+		text-transform: none;
+		font-family: OpenSans;
+		margin-bottom: 15px;
+		font-size: 10px;
+		cursor: pointer;
+	}
+
+	li.active p {
+		color: $blue;
+	}
+}
+
+#profileInfo .btn {
+	position: absolute;
+	bottom: 33px;
+	left: 33px;
+}
+
+.personInfo {
+	border-left: 1px solid $grey2;
+	background-color: white;
+	display: none;
+}
+
+.personHead {
+	height: 85px;
+	width: 100%;
+	border-bottom: 1px solid $grey2;
+	position: relative;
+}
+
+#personEver {
+	width: 100%;
+	padding: 9px;
+}
+
+p.personHeadline {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	color: black;
+	font-size: 13px;
+}
+
+.personCard {
+	height: 248px;
+	float: left;
+	padding: 9px;
+
+	.paddCard {
+		height: 100%;
+		padding: 33px;
+		position: relative;
+	}
+
+	p {
+		float: left;
+		color: $grey6;
+
+	}
+}
+
+.personCard:nth-of-type(4), .personCard:nth-of-type(5) {
+	height: 268px;
+}
+
+#myBasket {
+	background-color: $blue;
+
+	p {
+		color: white;
+	}
+
+	img {
+		position: absolute;
+		bottom: 0;
+		right: 50px;
+		height: 127px;
+	}
+}
+
+#myBasket .btn:hover, #selectedProd .btn:hover {
+	background-color: white;
+	transition: background-color 0.2s, color 0.2s; 
+}
+
+#myBasket .btn:hover p {
+	color: $blue;
+}
+
+#selectedProd {
+	background-color: $grey6;
+
+	p {
+		color: white;
+	}
+}
+
+#selectedProd .btn:hover p {
+	color: $grey6;
+}
+
+#purchHist, #bonusRub, #personalData {
+	background-color: $grey1;
+}
+
+#purchHist div.btn, #purchHist a.btn{
+	right: 33px;
+	background-color: $blue;
+	border: 0px;
+	transition: background-color 0.2s, color 0.2s, border 0.2s;
+
+	p {
+		color: white;
+	}
+}
+
+#purchHist .btn:hover {
+	
+	background-color: $grey1;
+	border: 1px solid $blue;
+	transition: background-color 0.2s, color 0.2s, border 0.2s;
+
+	p {
+		color: $blue;
+	}
+}
+
+#bonusRub {
+	position: relative;
+}
+
+p.cardHead {
+	text-transform: uppercase;
+	line-height: 25px;
+	margin-bottom: 22px;
+	width: 100%;
+	font-family: AkzidenzMD;
+}
+
+.numbProd, p.wordProd {
+	float: left;
+	font-family: OpenSans;
+	font-size: 12px;
+}
+
+body#personal {
+	
+	#profileInfo {
+		.price {
+			clear: left;
+			margin-top: 16px;
+			font-size: 17px;
+		}
+
+		.value {
+			margin-top: 19px;
+			font-size: 12px;
+		}
+	}
+
+	#password {
+		padding: 0;
+	}
+}
+
+div.btn, a.btn {
+	height: 50px;
+	padding: 0;
+	border-radius: 0;
+
+	p {
+		text-transform: uppercase;
+		line-height: 49px;
+		text-align: center;
+		width: 100%;
+		font-size: 11px;
+	}
+}
+
+p.numbBonus {
+	text-transform: uppercase;
+	font-family: OpenSans;
+	font-size: 13px;
+}
+
+.infoCardLeft {
+	position: absolute;
+	bottom: 33px;
+	left: 33px;
+
+	p {
+		clear: left;
+		margin-top: 10px;
+		font-family: OpenSans;
+		font-size: 13px;
+	}
+}
+
+.infoCardRight {
+	position: absolute;
+	bottom: 33px;
+	right: 33px;
+
+	p {
+		float: right;
+		clear: right;
+		margin-top: 10px;
+		text-transform: uppercase;
+		font-size: 12px;
+		font-family: AkzidenzMD;
+	}
+}
+
+#infoCard {
+	p {
+		float: left;
+		clear: left;
+		width: 100%;
+		padding-bottom: 9px;
+		font-family: OpenSans;
+		font-size: 13px;
+	}
+
+	span p {
+		font-family: AkzidenzMD;
+	}
+
+	p:last-of-type {
+		float: none;
+		clear: none;
+	}
+
+	p:nth-of-type(4), p:nth-of-type(5) {
+		width: auto;
+	}
+}
+
+#personalData {
+
+	.infoCardLeft {
+
+		p {
+			text-transform: uppercase;
+			color: $blue;
+			font-family: AkzidenzMD;
+			cursor: pointer;
+		}
+
+		p:hover {
+			color: $violet;
+		}
+	}
+
+	img {
+		position: absolute;
+		right: 45px;
+		top: 45px;
+		width: 148px;
+	}
+}
+
+#personDataInfo {
+	
+	#personEver {
+		padding: 18px;
+	}
+
+	.formCard {
+		padding-top: 20px
+	}
+
+	#privateReg .btn{
+		margin-bottom: 33px;
+	}
+} 
+
+.formCard {
+	height: 100%;
+	width: 100%;
+	padding: 30px;
+	background-color: $grey1;
+	float: left;
+
+	p {
+		margin-bottom: 7px;
+		font-family: AkzidenzMD;
+		float: left;
+		height: 13px;
+	}
+
+	.btn {
+		background-color: $blue;
+		height: 37px;
+		margin-top: 22px;
+
+		p {
+			margin: 0;
+			line-height: 37px;
+			color: white;
+			font-size: 10px;
+		}
+	}
+
+	select {
+		margin: 0 5px 27px 0;
+	}
+
+	select:first-of-type {
+		width: 50px;
+		clear: left;
+	}
+
+	select:nth-of-type(2) {
+		width: 90px;
+	}
+
+	select:last-of-type {
+		width: 70px;
+	}	
+}
+
+input {
+	float: left;
+
+	&::-webkit-input-placeholder {
+		color: #ccc;
+		font-size: 10px;
+	}
+
+	&:focus {
+		&::-webkit-input-placeholder {
+			color: transparent;
+		}
+	}
+}
+
+input[type=radio] {
+	display:none;  
+}
+
+.radioName {
+	text-transform: uppercase;
+	font-size: 11px;
+	margin: 12px 0 0 5px;
+}
+
+body .redStar {
+	color: $red;
+	clear: none;
+	font-size: 15px;
+	float: left;
+}
+
+.inputName {
+	clear: left;
+	font-size: 11px;
+}
+
+input[type=text], input[type=password] {
+	clear: left;
+	height: 37px;
+	margin-bottom: 12px;
+	border: 1.5px solid $grey2;
+	font-family: AkzidenzMD;
+	font-size: 11px;
+	padding-left: 12px;
+}
+
+.seven {
+	clear: left;
+	height: 37px;
+	padding: 0 12px 0 0;
+	line-height: 37px;
+	font-size: 11px;
+}
+
+.btn {
+	clear: left;
+    float: left;
+    width: 100%;
+}
+
+.custom-radios p {
+	white-space: nowrap;
+}
+
+.custom-radios [type='radio'] + label {
+	display: inline-block;
+	position: relative;
+	margin: 10px 4px 22px 4px;
+	border: 1.5px solid $grey3;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	cursor: pointer;
+	float: left;
+	background: $grey1;
+}
+
+.custom-radios [type='radio'] + label:nth-of-type(1) {
+	clear: left;
+}
+
+.custom-radios [type='radio'] + label:nth-of-type(2) {
+	margin-left: 42px;
+}
+
+.custom-radios [type='radio'] + label:before {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	opacity: 0;
+	width: 6px;
+	height: 6px;
+	background-color: $blue;
+	border-radius: 50%;
+	content: '';
+}
+
+.custom-radios [type='radio']:checked + label {
+	border: 1.5px solid $blue;
+}
+
+.custom-radios [type='radio']:checked + label:before {
+	opacity: 1;
+}
+
+body#personal .products {
+	margin-bottom: 0;
+	border: 0;
+}
+

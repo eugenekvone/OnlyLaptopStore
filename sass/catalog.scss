@@ -1,0 +1,429 @@
+@import url(https://use.fontawesome.com/releases/v5.5.0/css/all.css);
+
+// HEADER SECTION
+
+body#catalog {
+	#carouselExampleIndicators {
+		margin: 130px auto 0 auto;
+	   	left: 0;
+	    right: 0;
+	    position: absolute;
+	    padding: 0;
+	    height: 200px;
+	}
+
+	.bottomNav {
+		position: absolute;
+		top: 65px;
+	}
+
+	#content {
+		margin-top: 265px;
+	}
+
+	a.productBtnCheck {
+		background-color: $grey2;
+	}
+
+	.bottomNav.fixedBottomNav {
+		position: fixed;
+		top: 0;
+	}
+}
+
+// CONTENT SECTION
+
+body#catalog {
+
+	#content {
+		border-bottom: 0;
+	}
+
+	.products {
+		height: 100%;
+		margin-bottom: 0;
+		float: left;
+		padding: 0;
+		border: none;
+		border-left: 1px solid $grey2;		
+	}
+}
+
+#content {
+	margin-bottom: 45px;
+	padding: 0;
+	border: 1px solid $grey2;
+}
+
+#filter {
+	height: 100%;
+	float: left;
+	padding: 0;
+	overflow: hidden;
+}
+
+#filterBtnMobile {
+	background-color: $grey1;
+}
+
+.priceBox {
+	float: left;
+	height: 25px;
+
+	.price {
+		clear: left;
+	}
+
+	p.price {
+		line-height: 25px;
+	}
+
+	p.value {
+		line-height: 23px;
+	}
+}
+
+.price.stockItem {
+	font-size: 11px;
+	text-decoration: line-through;
+}
+
+p.stockItem {
+	color: $grey4;
+	display: none;
+}
+
+#stockProduct .price.stockItem, #stockProduct .stockItem.ru{
+	display: block;
+}
+
+.value.stockItem {
+	font-size: 8px;
+}
+
+.branch {
+	
+	border-bottom: 1px solid $grey2;
+	position: relative;
+	padding: 20px;
+
+	ion-icon {
+		float: left;
+		margin: -2px 5px 0 0;
+		font-size: 12px;
+		color: $grey3;
+	}
+
+	p {
+		font-family: AkzidenzMD;
+		text-transform: uppercase;
+		color: $grey3;
+	}
+}
+
+#itemInfo {
+	height: 80px;
+}
+
+#gamingProduct, #homeProduct {
+	display: none;
+}
+
+#sorting {
+	height: 50px;
+	border-bottom: 1px solid $grey2;	
+	p {
+		line-height: 50px;
+		font-size: 10px;
+		float: left;
+		text-transform: lowercase;
+	}
+
+	p.en {
+		font-family: AkzidenzMD;
+		font-size: 11px;
+	}
+
+	ion-icon {
+		margin: 17px 13px;
+		font-size: 16px;
+		float: left;
+	}
+
+	ion-icon:last-of-type {
+		float: right;
+	}
+}
+
+#showMore {
+	width: 100%;
+	height: 65px;
+	margin-top: 40px;
+	border-top: 1px solid $grey2;
+	border-bottom: 1px solid $grey2;
+	float: left;
+	cursor: pointer;
+
+	p {
+		width: 100%;
+		line-height: 65px;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 13px;
+	}
+
+	p.en {
+		font-family: LuloCleanOneBold;
+		font-size: 12px;
+	}
+
+	ion-icon {
+		color: $blue;
+		margin-left: 10px;
+		font-size: 19px;
+		vertical-align: sub;
+	}
+}
+
+.sort {
+	border-right: 1px solid $grey2;
+	float: left;
+	height: 100%;
+	padding: 0;
+}
+
+#itemLists {
+	
+	width: 100%;
+	border-bottom: 1px solid $grey2;
+	padding: 40px 25px 10px 25px;
+
+	li p {
+		float: left;
+		font-size: 10px;
+		clear: left;
+		font-family: OpenSans;
+	}
+
+	li:last-of-type {
+		margin-bottom: 0;
+	}
+
+	li {
+		margin-bottom: 15px;
+		@include clearfix;
+	}
+
+	ul {
+		@include clearfix;
+		margin-bottom: 0;
+	}
+
+	ion-icon {
+		float: right;
+		cursor: pointer;
+	}
+
+	.numb {
+
+		float: right;
+		clear: right;
+		width: 12px;
+		margin-right: 2px;
+			
+			p {
+				font-size: 10px;
+				color: $grey3;
+				width: 100%;
+				text-align: center;
+		}
+	}
+}
+
+#itemListStock p {
+	color: $red;
+}
+
+.ion-iconCheck {
+	transform :rotate(180deg);
+}
+
+.dropDownList {
+	width: 100%;
+	overflow: hidden;
+	float: left;
+
+	ul, span.irs, #scrollbar {
+		width: 100%;
+		transition-timing-function: ease;
+	}
+
+	ul {
+		margin-top: 25px;
+	}
+}
+
+.itemList {
+	margin-bottom: 30px;
+	height: auto;
+	width: 100%;
+	float: left;
+}
+
+#itemPrice {
+	padding: 0 25px;
+}
+
+.headline {
+	float: left;
+	text-transform: uppercase;
+	font-size: 12px;
+	clear: left;
+	cursor: pointer;
+	line-height: 16px;
+}
+
+.headline.en {
+	font-family: AkzidenzMD;
+}
+
+#priceScope {
+	width: 100%;
+	padding: 30px 0 15px 0;
+	border-bottom: 1px solid $grey2;
+	background-color: $grey1;
+
+	.dropDownList {
+		padding: 0 25px;
+	}
+}
+
+.dropDown {
+	margin-bottom: 15px;
+
+	ion-icon {
+		float: left;
+		margin: -2px 5px 2px -3px;
+	}
+
+	.headline {
+		clear: none;
+	}
+}
+
+.filterBord {
+	border-bottom: 1px solid $grey2;
+}
+
+#optionCheck {
+	padding: 30px 7px 15px 25px;
+	width: 100%;
+	background-color: $grey1;
+}
+
+#scrollbar {
+	height: 396px;
+	width: 100%;
+	overflow-y: auto;
+
+	input {
+		margin: 0 7px;
+		vertical-align: sub;
+		background-color: black;
+	}
+
+	p {
+		font-family: OpenSans;
+		text-transform: lowercase;
+		font-size: 10px;
+		line-height: 10px;
+		float: left;
+	}
+
+	div {
+		margin-bottom: 13px;
+		float: left;
+		clear: left;
+		input[type="checkbox"] {
+			display: none;
+		}
+
+		label {
+			width: auto;
+			float: left;
+		}
+		 
+		/* стили для метки */
+		 
+		/* формируем внешний вид чекбокса в псевдоэлементе before */
+		label:before {
+			content: " ";
+			color: #000;
+			display: inline-block;
+			font: 10px/10px OpenSans;
+			position: relative;
+			text-align: center;
+			text-indent: 0px;
+			width: 10px;
+			height: 10px;
+			background: #FFF;
+			border: 1px solid #e3e3e3;
+			border-image: initial;
+			vertical-align: middle;
+			cursor: pointer;
+			float: left;
+			margin-right: 7px;
+		}
+		 
+		/* вариации внешнего вида в зав-ти от статуса checkbox */
+		/* checked */
+		input:checked + label:before {
+			content: '✔';
+			color: $blue;
+			margin-right: 7px;
+		}
+		/* disabled */
+		input:disabled + label:before {
+			background: #eee;
+			color: #aaa;
+
+		}
+	}
+}
+
+label {
+	margin-bottom: 0;
+	cursor: pointer;
+	width: 100%;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: $grey2;
+}
+
+.infoBranch {
+	margin-right: 5px;
+	font-size: 8px;
+	letter-spacing: 2px;
+	float: left;
+}
+
+p.nameBranch {
+	color: black;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	font-size: 13px;
+}
+
+p.amount {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	font-size: 10px;
+}

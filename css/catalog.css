@@ -1,0 +1,10 @@
+#header .containCarousel.container {
+  margin: 130px auto 0 auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  padding: 0; }
+
+#content {
+  height: 1000px;
+  width: 100%; }

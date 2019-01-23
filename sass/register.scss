@@ -1,0 +1,117 @@
+// REGISTER
+
+body#registration {
+
+	.btn {
+		width: 100%;
+	}
+
+	.seven {
+		width: 10%;
+	}
+
+	input.phoneNumber {
+		width: 90%;
+	}
+
+	.formCard {
+		padding-bottom: 21px;
+	}
+
+	.active {
+		display: block;
+	}
+
+	#password {
+		border-left: 1px solid $grey2;
+		border-right: 1px solid $grey2;
+	}
+}
+
+#register {
+	height: auto;
+	width: 100%;
+	border: 1px solid $grey2;
+	position: relative;
+}
+
+#enter {
+	height: 120px;
+	background-color: $grey6;
+	width: 100%;
+	padding-top: 28px;
+	float: left;
+
+	.container {
+		width: 322px;
+	}
+
+	p {
+		text-transform: uppercase;
+		font-size: 11px;
+		color: $grey5;
+		padding-left: 5px;
+		font-family: AkzidenzMD;
+	}
+
+	img {
+		width: 12.4223602484472%;
+		margin: 10px 1.552795031055901%;
+	}
+}
+
+p.formHeadLine {
+	text-transform: uppercase;
+	font-size: 13px;
+	margin-bottom: 23px;
+}
+
+input[type=text], input[type=password] {
+	width: 100%;
+}
+
+.formHalfRight, .formHalfLeft{
+	width: 50%;
+	float: left;
+}
+
+.formHalfRight {
+	padding-left: 7.5px;
+}
+
+.formHalfLeft {
+	padding-right: 7.5px;
+}
+
+#password {
+	padding: 30px;
+}
+
+#privateReg, #legalReg {
+	display: none;
+}
+
+.formLinkIn {
+	color: $blue;
+	position: absolute;
+	top: 32px;
+	right: 30px;
+	font-size: 11px;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+select {
+    text-transform: uppercase;
+    color: $grey7;
+    height: 37px;
+	border: 1.5px solid $grey2;
+	font-family: AkzidenzMD;
+	font-size: 11px;
+	padding-left: 12px;
+	float: left;
+}
+
+select:hover {
+	color: black;
+}

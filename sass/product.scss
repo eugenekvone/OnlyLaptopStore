@@ -1,0 +1,284 @@
+
+// PRODUCT 
+
+// HEADER SECTION
+
+body#product {
+
+	#gaming {
+		background-color: $grey2;
+	}
+}
+
+// CONTENT SECTION
+
+body#product, body#basketStand, body#favoritesStand {
+
+	#itemInfo {
+		height: 42px;
+		padding: 17px;
+	}
+
+	#offersNav, .offersNav {
+		border-bottom: 1px solid $grey2;
+		border-top: 1px solid $grey2;
+		height: 51px;
+	}
+
+	.switchRight {
+		border-right: none;
+	}
+
+	#about, .about {
+
+		.fact {
+			border-top: 1px solid $grey2;
+			border-right: 1px solid $grey2;
+		}
+
+		.fact:last-of-type {
+			border-right: none;
+		}
+	}
+
+	.products {
+		border: none;
+		margin-bottom: 0;
+
+	}
+}
+
+.float p.listHead {
+	font-size: 11px;
+	font-family: AkzidenzMD;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+}
+
+p.offersHead {
+	text-transform: uppercase;
+	font-family: AkzidenzMD;
+	line-height: 50px;
+	padding-left: 20px;
+	font-size: 11px;
+	float: left;
+}
+
+#fastInfo, #imgMini, #imgMax{
+	float: left;
+
+	img {
+		width: 100%;
+		margin: 15px 0;
+	}
+}
+
+#fastInfo {
+
+	padding-right: 45px;
+	position: relative;
+
+	.productDepiction {
+		padding-bottom: 40px;
+		font-family: OpenSans;
+		line-height: 20px;
+	}
+
+	#fastInfoHeadLine {
+		padding: 35px 0;
+		font-family: AkzidenzMD;
+		text-transform: uppercase;
+		font-size: 18px;
+	}
+
+	.btn {
+		background-color: $blue;
+		color: white;
+		width: 47%;
+		float: left;
+
+		p {
+			font-family: AkzidenzMD;	
+		}
+	}
+
+	.btn:last-of-type {
+		clear: none;
+		margin-left: 6%;
+		background-color: $grey6;
+	}
+
+	#productPrice {
+		float: left;
+		clear: left;
+		margin: 20px 0;
+
+		p {
+			padding-bottom: 0;
+		}
+	}
+}
+
+#fastInfo, #allSpec {
+	p {
+		float: left;
+		padding-bottom: 10px;
+	}
+
+	.productMeaning {
+		float: right;
+		font-family: OpenSans;
+		max-width: 50%;
+		text-align: right;
+	}
+
+	.productProperty {
+		clear: left;
+		font-family: AkzidenzMD;
+		max-width: 50%;
+		line-height: 20px;
+	}
+}
+
+#productPrice {
+
+	.price {
+		font-size: 18px;
+	}
+
+	.value {
+		font-size: 14px;
+	}
+}
+
+#allSpec {
+	padding: 30px 30px 20px 30px;
+	float: left;
+	clear: left;
+	width: 100%;
+
+	div {
+		float: left;
+		margin-top: 15px;
+		width: 100%;
+	}
+
+	.specItems {
+		margin-top: 0;
+	}
+
+	p.allSpecHeadline {
+		text-transform: uppercase;
+		font-size: 18px;
+		width: 100%;
+		padding-left: 17px;
+		padding-bottom: 0;
+		font-family: AkzidenzMD;
+	}
+
+	.productProperty {
+		font-family: OpenSans;
+	}
+}
+
+p.specHeadline {
+	line-height: 30px;
+	text-transform: uppercase;
+	width: 100%;
+	font-family: AkzidenzMD;
+}
+
+#imgMini {
+	padding: 15px 15px 15px 30px;
+
+	img {
+		float: left;
+	}
+
+	img, img:hover {
+		transition: width 0.3s, transform 0.3s;
+		cursor: pointer;
+	}
+}
+
+#imgMax {
+
+	position: relative;
+	height: 100%;
+	padding: 0;
+
+	img {
+		position: absolute;
+		margin: auto 0;
+		padding: 0 15px;
+		top: 0;
+		bottom: 0;
+		display: none;
+	}
+
+	img.active {
+		display: block;
+	}
+}
+
+.wholeList {
+	background-color: $grey1;
+	width: 100%;
+	padding: 55px 0;
+}
+
+#links {
+	height: 140px;
+	padding: 60px 0 0 25px;
+
+	img {
+		height: 50px;
+		margin-right: 15px;
+	}
+}
+
+#titleSite {
+	height: 60px;
+
+	p {
+		line-height: 60px;
+		padding-left: 25px;
+		text-transform: uppercase;
+		font-size: 11px;
+		font-family: AkzidenzMD;
+	}
+}
+
+.float {
+	float: left;
+	padding: 0;
+	position: relative;
+
+	div {
+		width: 80px;
+	}
+
+	p {
+		font-family: OpenSans;
+		font-size: 10px;
+    	margin-bottom: 14px;
+    	cursor: pointer;
+	}
+}
+
+.float:nth-of-type(2) div {
+	margin: 0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.float:first-of-type div{
+	float: right;
+}
+
+.float:last-of-type div{
+	float: left;
+}
+
+
