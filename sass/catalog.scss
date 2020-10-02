@@ -132,6 +132,7 @@ p.stockItem {
 #sorting {
 	height: 50px;
 	border-bottom: 1px solid $grey2;	
+
 	p {
 		line-height: 50px;
 		font-size: 10px;
@@ -344,6 +345,7 @@ p.stockItem {
 		margin-bottom: 13px;
 		float: left;
 		clear: left;
+		
 		input[type="checkbox"] {
 			display: none;
 		}
@@ -386,7 +388,6 @@ p.stockItem {
 		input:disabled + label:before {
 			background: #eee;
 			color: #aaa;
-
 		}
 	}
 }

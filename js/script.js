@@ -1,4 +1,4 @@
-function addDelClass (delClass, addClass, item) {
+function addDelClass(delClass, addClass, item) {
 	delClass.removeClass(addClass);
 	item.addClass(addClass);
 };

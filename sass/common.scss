@@ -118,7 +118,11 @@ footer.ru .en,
 body.en .ru,
 body.ru .en {
   display: none
-};
+}
+
+body {
+	overflow-x: hidden;
+}
 
 body#registration, body#authorization {
 	#content {
